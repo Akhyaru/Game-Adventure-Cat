@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b51pamgp4yu8t"]
+
+[ext_resource type="Texture2D" uid="uid://d24fde5nx5vee" path="res://asset/tirarium/sprites/world_tileset.png" id="1_loxpn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_200u1"]
+size = Vector2(16, 16)
+
+[node name="Ice" type="AnimatableBody2D" groups=["ice"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_loxpn")
+region_enabled = true
+region_rect = Rect2(96, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_200u1")

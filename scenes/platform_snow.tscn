@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b67pokhvxk324"]
+
+[ext_resource type="Texture2D" uid="uid://cykibruvja5dd" path="res://asset/tirarium/sprites/platforms.png" id="1_aode3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aode3"]
+size = Vector2(9, 32)
+
+[node name="PlatformSnow" type="AnimatableBody2D" groups=["ice"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_aode3")
+region_enabled = true
+region_rect = Rect2(16, 48, 32, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.98023e-08, -0.5)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_aode3")
